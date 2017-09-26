@@ -1,15 +1,73 @@
 <!doctype html>
 <html lang "">
-  <head>
-  </head>
-  <body>
-    <h1>My Colorful login</h1>
-    <form>
-      <fieldset>
-<label for="firstName">First Name</label>
-<input type="text" id="firstName" 
-      </fieldset>
-    </form>
 
-  </body>
+<head>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <section name="gradient">
+
+    <form>
+      <h1>My Colorful Login</h1>
+      <section name="name">
+
+        <label for="firstName"></label>
+        <input type="text" placeholder="firstName" id="firstName" name="firstName">
+
+
+        <label for="lastName"></label>
+        <input type="text" placeholder="lastName" id="lastName">
+
+      </section>
+
+      <section name="date">
+
+        <label for="age"></label>
+        <input type="number" placeholder="Age" id="age" name="age">
+
+
+        <label for="date"></label>
+        <input type="date" input id="date">
+
+        <label for="colors"></label>
+        <input type="color" value="000000" input id="color">
+
+        <label for="password"></label>
+        <input type="password" placeholder="password" id="password" name="password" required>
+      </section>
+
+      <section name="email">
+        <label for="Email"></label>
+        <input type="Email" placeholder="email" id="email" name="email">
+
+        <select name="hear" id="hear about">
+          <label for="How did you hear about us?"></label>
+          <optgroup label="Where did you hear about helio">
+          <option value="Google">Google</option>
+          <option value="Friend">Friend</option>
+          <option value="Ad">Ad</option>
+        </optgroup>
+        </select>
+      </section>
+
+
+      <section name="radio">
+        <input type="radio" id="textOnly" name="choose" value="Text Only">
+        <label for="textOnly">Text Only</label>
+
+
+        <input type="radio" id="textAndEmail" name="choose" value="Text and Email">
+        <label for="textAndEmail">Text and Email</label>
+
+
+        <input type="radio" id="None" name="choose" value="Text None">
+        <label for="none">None</label>
+      </section>
+      <button type="Submit">Log In</button>
+
+    </form>
+  </section>
+</body>
+
 </html>
